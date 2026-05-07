@@ -58,6 +58,8 @@ This project analyzes OTT movies data using Python, SQL, and Power BI to identif
  
 ## 🖼️ Project Screenshots
 ## 🌡️ Correlation Heatmap
+<img width="485" height="422" alt="image" src="https://github.com/user-attachments/assets/49542fe4-4491-42f3-bca8-85a0b6ed702e" />
+
 
 ## 📊 Power BI Dashboard
 
