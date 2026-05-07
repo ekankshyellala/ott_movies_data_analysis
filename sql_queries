@@ -1,0 +1,113 @@
+/*SQL QUERIES*/
+/* 1. Top 10 Movies by Votes
+   Objective: Identify the most popular OTT movies based on audience votes. */
+
+SELECT TOP 10 movie_name,
+    imdb_rating,
+    votes
+FROM sampleott
+ORDER BY votes DESC;
+
+
+
+/* 2️. Average IMDb Rating by Genre
+   Objective: Compare average ratings across different movie genres.*/
+
+SELECT genre,
+    ROUND(AVG(imdb_rating), 2) AS avg_rating
+FROM sampleott
+GROUP BY genre
+ORDER BY avg_rating DESC;
+
+
+
+/* 3. Movies Released Per Year
+   Objective: Analyze movie release trends over different years. */
+
+SELECT release_year,
+    COUNT(*) AS total_movies
+FROM sampleott
+GROUP BY release_year
+ORDER BY release_year;
+
+
+
+/* 4️.Top Rated Movies with High Votes
+   Objective: Find highly rated movies with strong audience engagement. */
+
+SELECT TOP 10
+    movie_name,
+    imdb_rating,
+    votes
+FROM sampleott
+WHERE votes > 50000
+ORDER BY imdb_rating DESC;
+
+
+
+/* 5️. Average Critic Score vs IMDb Rating
+   Objective: Compare critic reviews with audience ratings. */
+
+SELECT ROUND(AVG(critic_score), 2) AS avg_critic_score,
+    ROUND(AVG(imdb_rating), 2) AS avg_imdb_rating
+FROM sampleott;
+
+
+
+/* 6️. Genre-wise Total Votes
+   Objective: Identify genres with the highest audience engagement.*/
+
+SELECT genre,
+    SUM(votes) AS total_votes
+FROM sampleott
+GROUP BY genre
+ORDER BY total_votes DESC;
+
+
+
+/* 7️. Highest Rated Movies
+   Objective: Display movies with the highest IMDb ratings. */
+
+SELECT TOP 10 movie_name,
+    genre,
+    imdb_rating
+FROM sampleott
+ORDER BY imdb_rating DESC;
+
+
+
+/*  8️. Average Movie Duration by Genre
+   Objective: Analyze average runtime across movie genres. */
+
+SELECT genre,
+    ROUND(AVG(runtime_mins), 2) AS avg_runtime
+FROM sampleott
+GROUP BY genre
+ORDER BY avg_runtime DESC;
+
+
+
+/*  9️. Movies with Above Average Ratings
+   Objective: Identify movies performing better than overall average rating. */
+
+SELECT movie_name,
+    imdb_rating
+FROM sampleott
+WHERE imdb_rating >
+(
+    SELECT AVG(imdb_rating)
+    FROM sampleott
+)
+ORDER BY imdb_rating DESC;
+
+
+
+/* 10.Correlation Trend Insight
+   Objective: Compare IMDb ratings, critic scores, and votes together.*/
+
+SELECT movie_name,
+    imdb_rating,
+    critic_score,
+    votes
+FROM sampleott
+ORDER BY votes DESC;
