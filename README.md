@@ -42,9 +42,17 @@ This project analyzes OTT movies data using Python, SQL, and Power BI to identif
  ✅ Created queries for:
 
  🏆 Top movies by votes
+ <img width="308" height="153" alt="Screenshot 2026-05-07 180502" src="https://github.com/user-attachments/assets/b0c92d4a-4bcd-49b0-a336-cadaf1bf2566" />
+
  🎭 Genre-wise ratings
+ <img width="126" height="112" alt="Screenshot 2026-05-07 180543" src="https://github.com/user-attachments/assets/17d6c857-67e3-4a74-83cb-7fcdcca62b9b" />
+
  📅 Year-wise movie trends
+ <img width="171" height="164" alt="Screenshot 2026-05-07 180619" src="https://github.com/user-attachments/assets/dfde1d5e-3b30-4418-8423-7cea48a692fa" />
+
  ⭐ Average ratings by OTT platform
+ <img width="170" height="95" alt="Screenshot 2026-05-07 190356" src="https://github.com/user-attachments/assets/60efb58b-eb8b-4fcb-803d-136e1e0ca7ea" />
+
 
 ## 📊 Power BI Dashboard
 
@@ -62,6 +70,7 @@ This project analyzes OTT movies data using Python, SQL, and Power BI to identif
 
 
 ## 📊 Power BI Dashboard
+<img width="610" height="329" alt="Screenshot 2026-05-07 184354" src="https://github.com/user-attachments/assets/6247f6ec-4f07-4daa-ba25-9bcd4e48ebfe" />
 
 ## 🎯 Conclusion
 
