@@ -42,7 +42,7 @@ This project analyzes OTT movies data using Python, SQL, and Power BI to identif
  ✅ Created queries for:
 
  🏆 Top movies by votes
-<img width="610" height="329" alt="image" src="https://github.com/user-attachments/assets/9d7c41f2-d205-411b-ab18-a73f72491580" />
+![top_movies_by_votes .png]
 
  🎭 Genre-wise ratings
  📅 Year-wise movie trends
